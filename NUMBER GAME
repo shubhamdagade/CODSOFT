@@ -1,0 +1,49 @@
+Task1-Number Game
+
+package Tasks;
+
+import java.util.*;
+
+public class Task1 {
+    public static void number_game(){
+		
+		Random r=new Random();
+        int a=r.nextInt(100);
+        int n=5;    
+        int i;
+        System.out.println("WELCOME to Number Game");
+        System.out.println("You have only 5 Trials");
+        System.out.println("All the best!");
+        System.out.println("\n\n");
+        for(i=0;i<=n;i++){
+            System.out.println("Enter the number you want to guess: ");
+            Scanner sc=new Scanner(System.in);
+            int guess=sc.nextInt();
+            if(a==guess && n!=i){
+                System.out.println("Congratulations!!");
+                System.out.println("You gussed the correct number");
+                break;
+            }
+            else if(a>guess && n!=i){
+                System.out.println("Too Low");
+            }
+            else if(a<guess && n!=i){
+                System.out.println("Too High");
+            }
+
+        }
+        System.out.println("Trials are ended");
+        System.out.println("The correct number is: "+ a);
+        System.out.println("Play Again");
+        
+
+    }
+
+    public static void main(String[] args) {
+        number_game();
+		
+	}
+  
+
+}
+
