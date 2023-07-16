@@ -23,7 +23,7 @@ import java.util.*;
 }
 
 	
-public class Task2_ATM {
+public class Task4_ATM {
 
 
     public static void main (String[] args){
