@@ -108,5 +108,3 @@ public class Task4_ATM {
     }
 
 }
-
-
